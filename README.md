@@ -12,7 +12,23 @@ This is a simple web application built using Streamlit that predicts the categor
 
 4. Run the Streamlit app:
 
-5. Upload a resume file (supported formats: `.txt` and `.pdf`), and the app will predict its category based on its contents.
+
+5. The script will prompt you to input a resume text. It will then clean the text and predict the category of the resume based on the trained KNN classifier.
+
+## Files
+
+- `predict_resume_category.py`: Contains the code for predicting the category of a resume.
+- `best_knn_classifier.pkl`: Pickled KNN classifier trained on resume data.
+- `README.md`: This file.
+
+## Additional Information
+
+- The script utilizes NLTK for text preprocessing and scikit-learn for machine learning functionalities.
+- It loads a pre-trained TF-IDF vectorizer and KNN classifier to make predictions.
+- Ensure that the necessary model files (`best_knn_classifier.pkl`) are available in the same directory as the script.
+
+
+6. Upload a resume file (supported formats: `.txt` and `.pdf`), and the app will predict its category based on its contents.
 
 ## Requirements
 
